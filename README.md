@@ -3,7 +3,7 @@
 Docker container for VSEARCH.
 
 |Label|Name|Version|
-|:-|:-|:-|
+|:--|:--|:--|
 |Software|VSEARCH|2.4.0|
 |Base images|CentOS|7.3.1611|
 |Docker container|vsearch-docekr|0.1.0|
