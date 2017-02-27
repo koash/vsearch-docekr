@@ -1,5 +1,7 @@
 FROM centos:7.3.1611
 
+MAINTAINER Koichi Ashizaki
+
 RUN \
   set -x \
   yum update -y && \
@@ -25,4 +27,3 @@ RUN \
   rm -rf /opt/v$VSEARCH_VER.tar.gz
  
 CMD ["vsearch"] 
- 
