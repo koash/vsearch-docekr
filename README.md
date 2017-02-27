@@ -2,9 +2,11 @@
 
 Docker container for VSEARCH.
 
-- VSEARCH: 2.4.0
-- Base OS of docker CentOS: 7.3.11
-- vsearch-docker: 0.1.0
+|Label|Name|Version|
+|:-|:-|:-|
+|Software|VSEARCH|2.4.0|
+|Base images|CentOS|7.3.1611|
+|Docker container|vsearch-docekr|0.1.0|
 
 ## VSEARCH
 Versatile open-source tool for metagenomics
