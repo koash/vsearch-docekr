@@ -1,24 +1,20 @@
 # vsearch-docker
 
-Docker container for VSEARCH
-
-|Label|Name|Version|
-|:--|:--|:--|
-|Software|VSEARCH|2.4.0|
+Docker container for VSEARCH 2.4.0
 
 ### CentOS
 
-|Label|Name|Version|Size|
+|Label|Repository|Tag|Size|
 |:--|:--|:--|:--|
-|Base image |CentOS|7.3.1611|192MB|
-|Docker container|vsearch-centos|0.2.1|337MB|
+|base image|centos|7.3.1611|192MB|
+|docker container|vsearch-centos|0.2.1|337MB|
 
 ### Alpine Linux
 
-|Label|Name|Version|Size|
+|Label|Repository|Tag|Size|
 |:--|:--|:--|:--|
-|Base image|Alpine|3.5|3.98MB|
-|Docker container|vsearch-alpine|0.1.0|299MB|
+|base image|alpine|3.5|3.98MB|
+|docker container|vsearch-alpine|0.1.0|299MB|
 
 ## VSEARCH
 Versatile open-source tool for metagenomics
