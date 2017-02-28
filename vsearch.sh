@@ -3,5 +3,5 @@ docker \
   run \
   --rm \
   -it \
-  koash/vsearch:0.1.0 \
+  koash/vsearch:0.2.0 \
   vsearch $@
