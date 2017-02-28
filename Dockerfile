@@ -7,6 +7,9 @@ RUN \
   yum update -y && \
   yum install -y \
   wget \
+  epel-release \
+  python-pip \
+  biopython \
   automake \
   gcc-c++ \
   make && \
@@ -25,5 +28,5 @@ RUN \
   make install && \
   ln -s /opt/v$VSEARCH_VER/vsearch /usr/bin/vsearch && \
   rm -rf /opt/v$VSEARCH_VER.tar.gz
- 
-CMD ["vsearch"] 
+
+CMD ["vsearch"]
