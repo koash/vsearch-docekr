@@ -11,7 +11,7 @@ Docker container for VSEARCH
 |Label|Name|Version|Size|
 |:--|:--|:--|:--|
 |Base image |CentOS|7.3.1611|192MB|
-|Docker container|vsearch-centos-docekr|0.2.0|333MB|
+|Docker container|vsearch-centos-docekr|0.2.1|337MB|
 
 ### Alpine Linux
 
