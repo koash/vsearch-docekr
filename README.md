@@ -5,8 +5,10 @@ Docker container for VSEARCH.
 |Label|Name|Version|
 |:--|:--|:--|
 |Software|VSEARCH|2.4.0|
-|Base image|CentOS|7.3.1611|
-|Docker container|vsearch-docekr|0.2.0|
+|Base image 1|CentOS|7.3.1611|
+|Docker container|vsearch-centos-docekr|0.2.0|
+|Base image 2|Alpine|3.5|
+|Docker container|vsearch-alpine-docekr|0.1.0|
 
 ## VSEARCH
 Versatile open-source tool for metagenomics
