@@ -19,6 +19,9 @@ Versatile open-source tool for metagenomics
 ```
 $ ./build.sh [Tag of docker images]
 ```
+
+- c.f.
+
 ```
 $ ./build.sh 0.2.0
 ```
