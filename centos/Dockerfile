@@ -1,5 +1,7 @@
 FROM centos:7.3.1611
 
+MAINTAINER Koichi Ashizaki
+
 RUN yum update -y \
  && yum install -y \
     epel-release \
