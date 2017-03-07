@@ -2,7 +2,7 @@ FROM alpine:3.5
 
 MAINTAINER Koichi Ashizaki
 
-RUN apk --update add \
+RUN apk --update --no-cache add \
     python \
     py-pip \
     g++ \
@@ -31,8 +31,6 @@ RUN curl -SLO https://github.com/torognes/vsearch/archive/v$VSEARCH_VER.tar.gz \
  && make install \
  && ln -s /usr/src/v$VSEARCH_VER/vsearch /usr/bin/vsearch \
  && apk del build-dependencies \
- && rm -rf \
-    /tmp/v$VSEARCH_VER.tar.gz \
-    /var/cache/apk/*
+ && rm -rf /tmp/v$VSEARCH_VER.tar.gz
 
 CMD ["vsearch"]
