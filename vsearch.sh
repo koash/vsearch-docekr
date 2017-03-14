@@ -5,5 +5,5 @@ docker \
   -it \
   -v $(pwd):/share \
   --workdir=/share \
-  koash/vsearch-alpine:0.1.1 \
+  koash/vsearch:0.1.1 \
   vsearch $@
