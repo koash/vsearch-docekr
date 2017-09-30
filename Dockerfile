@@ -10,27 +10,23 @@ RUN apk --no-cache add \
 		build-dependencies \
 		build-base \
 		python-dev \
-		curl \
+		git \
 		autoconf \
 		automake \
 		make \
 	&& pip install --upgrade pip \
 	&& pip install biopython
 
-ENV VSEARCH_VER 2.4.0
-
 WORKDIR /tmp
 
-RUN curl -fSsL -O https://github.com/torognes/vsearch/archive/v${VSEARCH_VER}.tar.gz \
-	&& mkdir -p /usr/src \
-	&& tar -xzvf v${VSEARCH_VER}.tar.gz -C /usr/src \
-	&& cd /usr/src/vsearch-${VSEARCH_VER} \
+RUN git clone https://github.com/torognes/vsearch.git \
+	&& cd vsearch \
 	&& ./autogen.sh \
 	&& ./configure \
 	&& make \
 	&& make install \
-	&& ln -s /usr/src/v${VSEARCH_VER}/vsearch /usr/bin/vsearch \
+	&& ln -s /usr/src/vsearch /usr/bin/vsearch \
 	&& apk del build-dependencies \
-	&& rm -rf /tmp/v${VSEARCH_VER}.tar.gz
+	&& rm -rf vsearch
 
 CMD ["vsearch"]
