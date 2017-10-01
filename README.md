@@ -3,15 +3,24 @@
 Docker container for VSEARCH
 
 ## VSEARCH
-Versatile open-source tool for metagenomics
-- [Software web site](https://github.com/torognes/vsearch)
+
+[VSEARCH](https://github.com/torognes/vsearch) is versatile open-source tool for metagenomics
 
 ## Requirements
 - [Docker](https://www.docker.com/)
 
 ## Installation
+
+Please pull the latest docker image.
+
 ```
-$ ./build.sh
+$ docker pull koash/vsearch
+```
+
+Alternatively, to build the docker image, do the following.
+
+```
+$ docker build github.com/koash/vsearch-docker
 ```
 
 ## Usage
