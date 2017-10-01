@@ -3,19 +3,12 @@ FROM alpine:3.5
 MAINTAINER Koichi Ashizaki
 
 RUN apk --no-cache add \
-        python \
-        py-pip \
         g++  \
-    && apk --no-cache add --virtual \
-        build-dependencies \
-        build-base \
-        python-dev \
+    && apk --no-cache add --virtual build-dependencies \
         git \
         autoconf \
         automake \
-        make \
-    && pip install --upgrade pip \
-    && pip install biopython
+        make
 
 WORKDIR /tmp
 
